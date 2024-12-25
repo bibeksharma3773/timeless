@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless Memories - Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel=stylesheet href="timeless.css">
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.php">Portfolio_Details</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="experience.html">Experience & Skills</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="admin.php">Admin Panel</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <h2>Our Best Work</h2>
+            <div class="gallery-items">
+                <div class="gallery-item">
+                    <h3>Wedding Photography</h3>
+                    <div class="image-grid">
+                        <img src="image/wedding.jpg" alt="Photo 1">
+                        <img src="image/wdding2.avif" alt="Photo 2">
+                        <img src="image/bride.jpg" alt="Photo 3">
+                        <img src="image/ring.jpg" alt="Photo 4">
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Nature & Landscape</h3>
+                    <div class="image-grid">
+                        <img src="image/natural.jpg" alt="Photo 5">
+                        <img src="image/natural2.avif" alt="Photo 6">
+                        <img src="image/natural3.jpg" alt="Photo 7">
+                        <img src="image/natural4.webp" alt="Photo 8">
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Travelling Photography</h3>
+                    <div class="image-grid">
+                        <img src="image/traveling.avif" alt="Photo 9">
+                        <img src="image/travel2.avif" alt="Photo 10">
+                        <img src="image/travelling3.webp" alt="Photo 11">
+                        <img src="image/travelling4.jpeg" alt="Photo 12">
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Art & Drawing</h3>
+                    <div class="image-grid">
+                        <img src="image/drawing1.avif" alt="Photo 9">
+                        <img src="image/drawing2.jpg" alt="Photo 10">
+                        <img src="image/drawing2.jpg" alt="Photo 11">
+                        <img src="image/drawing4.jpg" alt="Photo 12">
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Babyshower Photography</h3>
+                    <div class="image-grid">
+                        <img src="image/baby1.webp" alt="Photo 9">
+                        <img src="image/baby2.jpg" alt="Photo 10">
+                        <img src="image/baby3.jpeg" alt="Photo 11">
+                        <img src="image/baby4.jpg" alt="Photo 12">
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Birthday Photography</h3>
+                    <div class="image-grid">
+                        <img src="image/a-fun-birthday1.webp" alt="Photo 9">
+                        <img src="image/birthday2.jpg" alt="Photo 10">
+                        <img src="image/birthday3.webp" alt="Photo 11">
+                        <img src="image/birthday4.jpg" alt="Photo 12">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Timeless Memories. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div class="modal" id="imageModal">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Expanded Image">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for handling image click and modal
+        const images = document.querySelectorAll('.image-grid img');
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeModal = document.getElementById('closeModal');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                modalImage.src = image.src;
+                modal.style.display = 'block';
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

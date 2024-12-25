@@ -1,0 +1,64 @@
+.message-box {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-content {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.message-box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0056b3;
+    text-transform: capitalize;
+}
+
+.message-box p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.message-box:hover {
+    border-color: #aaa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+}
+
+.delete-form {
+    display: flex;
+    align-items: center;
+}
+
+.delete-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+}
+
+.delete-button:active {
+    background-color: #ac2925;
+}

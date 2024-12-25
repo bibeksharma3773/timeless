@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('image/bg2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent for better contrast */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Form Container */
+.container {
+    max-width: 400px;
+    margin: 100px auto; 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #444;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+form .form-group input,
+form .form-group textarea,
+form .form-group button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form .form-group button {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form .form-group button:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Link Styles */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Profile Page */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-container h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #444;
+}
+
+.profile-container a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-container a:hover {
+    text-decoration: none;
+    background-color: #555;
+    transform: scale(1.1); /* Subtle zoom effect */
+}
